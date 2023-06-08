@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durumatoursafaris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <section class="header-contact-us">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="packages.html">PARCAGES</a></li>
+                    <li><a href="contactUs.html">CONTACTS US</a></li>
+                    <li><a href="safari.html">SAFARIS</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-----------------------------------Contact Us content----------------------------------------->
+        <div class="contact-us">
+            <div class="footer-text">
+                <h1>You Can Reach Us </h1>
+                <p>Miritini, Alongside SGR Road.</p>
+                <p>Mombasa, Kenya.</p>
+
+                <a href="#"><i class="fa fa-mobile-phone">  +254759447191</i></a>
+                <a href="#"><i class="fa fa-envelope">  info@durumatoursandsafaris.com</i></a>
+                <a href="#"><i class="fa fa-globe">  www.durumatoursandsafaris.com</i></a>
+                <a href="#"><i class="fa fa-instagram">  @duruma_tours_and_safaris</i></a>
+                <a href="#"><i class="fa fa-facebook">  @duruma tours and safaris</i></a>
+            </div>
+            <div class="message-form">
+
+                <div class="location_contact_Us">
+                    <h1>Send Your Message</h1>
+                    <form action="form-handler.php" method="post">
+
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                        <textarea rows="8" name="message" placeholder="Enter Your Message" required></textarea>
+                        <button type="submit" class="hero-btn">SEND YOR MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!--------------------------------------Footer note--------------------------------------------->
+    <div class="footer">
+
+        <div class="footer-text">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>Miritini, Alongside SGR Road.</p>
+            <p>Mombasa, Kenya.</p>
+
+            <a href="#"><i class="fa fa-mobile-phone">  +254759447191</i></a>
+            <a href="#"><i class="fa fa-envelope">  info@durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-globe">  www.durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-instagram">  @duruma_tours_and_safaris</i></a>
+            <a href="#"><i class="fa fa-facebook">  @duruma tours and safaris</i></a>
+        </div>
+        <div class="quick-links">
+            <h1>Quick Links</h1>
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a>
+            <a href="packages.html">PARCAGES</a>
+            <a href="contactUs.html">CONTACTS US</a>
+            <a href="safari.html">SAFARIS</a>
+
+        </div>
+    </div>
+
+    <!--------------------animation------------------>
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <!------------------------------media query for hidemenubar---------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+    <!------------------------------------------javascript-for-swiper----------------------------------->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

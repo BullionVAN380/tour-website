@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durumatoursafaris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="packages.html">PARCAGES</a></li>
+                    <li><a href="contactUs.html">CONTACTS US</a></li>
+                    <li><a href="safari.html">SAFARIS</a></li>
+
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        </div>
+        <!-------------------------a swiper-------------------------->
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/flamingos.jpeg"></div>
+                    <div class="swiper-slide"><img src="images/logo.png"></div>
+                    <div class="swiper-slide"><img src="images/zebras.jpg"></div>
+                    <div class="swiper-slide"><img src="images/nice-weather.jpg"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    </section>
+    <!-----------------------------------welcoming section----------------------------------------------->
+    <div class="welcome">
+
+        <div class="left-welcome-content">
+            <h1>Welcome to Duruma Tours & Safaris</h1>
+            <p>Duruma Tours and Safaris is an inbound tour operator domiciled in Kenya. Our specialty is organizing private and tailor made tours in Kenya and East Africa with first hand local knowledge. Provision of high quality services is our endeavor
+                as shown by our clients’ positive reviews .We started with a long-term objective of offering a side range of safe, reliable specialized tours that focus on the magnificent, scenic and natural beauty of East Africa. With an experienced,
+                friendly, helpful, understanding, and knowledgeable workforce. Our clients are assured of a safe and reliable safari experience while with us. At duruma tours we also offer volunteer packages for visitors who would wish to be volunteers
+                to non-governmental organization to create good life to those who are less fortune, we will offer you the privilege to with the community engage on matters of social work making a difference on someone's life through the volunteer package
+                .we as duruma tours and safaris we value humanity.this helps our tourist to freely intermingle with thr villagers down the coast of kenya in kwale county in a small village nown as tsunza creek,get to learn more culture from the people.
+                enjoy life far from town but near from town.
+            </p>
+        </div>
+        <div class="right-welcomeImage">
+            <img src="images/flamingos.jpeg">
+            <p>Flamingos</p>
+            <img src="images/hut-home.jpg">
+            <p>Masai Houses</p>
+        </div>
+    </div>
+    <!--------------------------------------Footer note--------------------------------------------->
+    <div class="footer">
+
+        <div class="footer-text wow slideInLeft">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>Miritini, Alongside SGR Road.</p>
+            <p>Mombasa, Kenya.</p>
+
+            <a href="#"><i class="fa fa-mobile-phone">  +254759447191</i></a>
+            <a href="#"><i class="fa fa-envelope">  info@durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-globe">  www.durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-instagram">  @duruma_tours_and_safaris</i></a>
+            <a href="#"><i class="fa fa-facebook">  @duruma tours and safaris</i></a>
+        </div>
+        <div class="quick-links wow slideInRight">
+            <h1>Quick Links</h1>
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a>
+            <a href="packages.html">PARCAGES</a>
+            <a href="contactUs.html">CONTACTS US</a>
+            <a href="safari.html">SAFARIS</a>
+
+        </div>
+    </div>
+
+    <!--------------------animation------------------>
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <!------------------------------media query for hidemenubar---------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+    <!------------------------------------------javascript-for-swiper----------------------------------->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

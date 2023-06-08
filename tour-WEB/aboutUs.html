@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durumatoursafaris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <section class="header-about-us">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="packages.html">PARCAGES</a></li>
+                    <li><a href="contactUs.html">CONTACTS US</a></li>
+                    <li><a href="safari.html">SAFARIS</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <!----------------------------about us Content---------------------------->
+    <div class="about-Us">
+
+        <div class="about-us-message">
+            <h1>About-Us</h1>
+            <P>Africa is a continent inspired by Adventure and Emotion; a continent rich with culture, unimaginable wildlife experiences and some of the most breathtaking sceneries. At Duruma Tours & Safaris, our focus is mainly concentrated on offering
+                high quality safaris experiences within East Africa and in particular Kenya, Tanzania, Rwanda and Uganda. Africa is much more than our passion, it is our home and our goal is to showcase the very best of it, to you as our guests. KARIBU
+                SANA! Duruma Tours and Safaris was established in the year 2022 by qualified professionals with experience in the tourism industry. </P>
+
+        </div>
+        <div class="about-us-explanation">
+            <h1>Why You Choose Us</h1>
+            <ol type="1">
+                <li>We are Professional Team</li>
+                <li>Dependable</li>
+                <li>Adaptable</li>
+                <li>Ethical</li>
+                <li> Competent</li><br><br>
+            </ol>
+           
+            <a href="safari.html">Explore More</a>
+        </div>
+        <div class="about-us-images">
+            <img src="images/pick-ups.jpeg">
+            <p>We Have Nice Safari Vehicales</p>
+            <img src="images/hut-home.jpg">
+            <p>Classical Accomodation</p>
+        </div>
+    </div>
+
+
+
+    <!--------------------------------------Footer note--------------------------------------------->
+    <div class="footer">
+
+        <div class="footer-text">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>Miritini, Alongside SGR Road.</p>
+            <p>Mombasa, Kenya.</p>
+
+            <a href="#"><i class="fa fa-mobile-phone">  +254759447191</i></a>
+            <a href="#"><i class="fa fa-envelope">  info@durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-globe">  www.durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-instagram">  @duruma_tours_and_safaris</i></a>
+            <a href="#"><i class="fa fa-facebook">  @duruma tours and safaris</i></a>
+        </div>
+        <div class="quick-links">
+            <h1>Quick Links</h1>
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a>
+            <a href="packages.html">PARCAGES</a>
+            <a href="contactUs.html">CONTACTS US</a>
+            <a href="safari.html">SAFARIS</a>
+
+        </div>
+    </div>
+
+    <!--------------------animation------------------>
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <!------------------------------media query for hidemenubar---------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+    <!------------------------------------------javascript-for-swiper----------------------------------->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

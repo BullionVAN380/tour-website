@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durumatoursafaris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <section class="header-packages">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="packages.html">PARCAGES</a></li>
+                    <li><a href="contactUs.html">CONTACTS US</a></li>
+                    <li><a href="safari.html">SAFARIS</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!--------------------------------------Packages contect------------------------------------------->
+    <div class="packages">
+        <div class="parkage-offer">
+            <h3>Our adventure safari packages are perfect for:</h3>
+            <img src="images/pick-ups.jpeg">
+            <li>1. Outings</li>
+            <li>2. Outbound</li>
+            <li>3. gathering</li>
+        </div>
+        <div class="target-audience">
+            <h3> Our target audience is </h3>
+            <img src="images/angamamara_1.jpg">
+            <li>1. Family</li>
+            <li>2. Solo travelers</li>
+            <li>3. Organizations and many more other categories of tourists.
+            </li>
+        </div>
+        <div class="salt-lick">
+            <h2>SALT LICK SAFARI LODGE</h2>
+            <img src="images/savora-salt-lick-game-lodge-4.jpg">
+            <p>its a fantastic chance to see more of real Kenya as you leave behind the city life .The journey will take you through magical encounter as you get to experience biodiversity of the hills ,enjoy heritage tour of world war lat {The Taita Hills
+                museum}
+            </p>
+        </div>
+        <div class="cost-longe">
+            <div class="cost-per-season">
+                <h3>HIGH SEASON</h3>
+                <div>
+                    <span>ROOM TYPE</span>
+                    <span>Lodge room</span>
+                </div>
+
+                <div>
+                    <span>SINGLE</span>
+                    <span>209$</span>
+                </div>
+
+                <div>
+                    <span>DOUBLE</span>
+                    <span>217$</span>
+                </div>
+
+                <div>
+                    <span>THIRD BED</span>
+                    <span>56$</span>
+                </div>
+
+                <div>
+                    <span>MEAL PLAN</span>
+                    <span>FB</span>
+                </div>
+            </div>
+
+            <div class="cost-per-season">
+                <h3>LOW SEASON</h3>
+                <div>
+                    <span>ROOM TYPE</span>
+                    <span>Lodge room</span>
+                </div>
+
+                <div>
+                    <span>SINGLE</span>
+                    <span>$130</span>
+                </div>
+
+                <div>
+                    <span>DOUBLE</span>
+                    <span>$203</span>
+                </div>
+
+                <div>
+                    <span>THIRD BED</span>
+                    <span>$90</span>
+                </div>
+
+                <div>
+                    <span>MEAL PLAN</span>
+                    <span>FB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--------------------------------------Footer note--------------------------------------------->
+    <div class="footer">
+
+        <div class="footer-text">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>Miritini, Alongside SGR Road.</p>
+            <p>Mombasa, Kenya.</p>
+
+            <a href="#"><i class="fa fa-mobile-phone">  +254759447191</i></a>
+            <a href="#"><i class="fa fa-envelope">  info@durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-globe">  www.durumatoursandsafaris.com</i></a>
+            <a href="#"><i class="fa fa-instagram">  @duruma_tours_and_safaris</i></a>
+            <a href="#"><i class="fa fa-facebook">  @duruma tours and safaris</i></a>
+        </div>
+        <div class="quick-links">
+            <h1>Quick Links</h1>
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a>
+            <a href="packages.html">PARCAGES</a>
+            <a href="contactUs.html">CONTACTS US</a>
+            <a href="safari.html">SAFARIS</a>
+
+        </div>
+    </div>
+
+    <!--------------------animation------------------>
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <!------------------------------media query for hidemenubar---------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+    <!------------------------------------------javascript-for-swiper----------------------------------->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

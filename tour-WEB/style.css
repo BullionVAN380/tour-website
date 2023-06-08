@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #000;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 17, 128);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.nav_links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_links ul li a {
+    color: rgb(0, 200, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+}
+
+.nav_links ul li:hover::after {
+    width: 100%;
+}
+
+.sub-title {
+    display: none;
+}
+
+.nav_links ul li:hover .sub-title {
+    display: block;
+    position: absolute;
+    background: rgb(2, 0, 128);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.nav_links ul li:hover .sub-title ul {
+    display: block;
+    margin: 10px;
+}
+
+.nav_links ul li:hover .sub-title ul li {
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted blue;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.nav_links ul li:hover .sub-title ul li:last-child {
+    border-bottom: none;
+}
+
+.nav_links ul li:hover.sub_title ul li a:hover {
+    color: red;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub_menu_X {
+    display: none;
+}
+
+.hover-me:hover .sub_menu_X {
+    position: absolute;
+    display: block;
+    margin: -40px;
+    margin-left: 140px;
+    background: orange;
+}
+
+
+/*----------------------------SWIPER----------------------------*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 2.4cm;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 90%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 90vh;
+    margin-top: 10px;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: white;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: white;
+}
+
+
+/*-------------------------------welcoming-section------------------------*/
+
+.welcome {
+    padding: 20px 6%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.left-welcome-content {
+    flex-basis: 45%;
+    align-self: flex-start;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-welcomeImage {
+    flex-basis: 35%;
+    margin-right: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-welcomeImage img {
+    width: 100%;
+}
+
+
+/*-----------------------------foooternote-------------------------------------------*/
+
+.footer {
+    background: rgb(0, 17, 128);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    height: 100vh;
+    margin-top: 3.5cm;
+}
+
+.footer-text img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.footer-text a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+
+.footer-text p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.footer-text h1 {
+    padding-top: 5px;
+    margin-left: 25px;
+}
+
+.quick-links {
+    margin-top: 110px;
+    padding: 10px;
+}
+
+.quick-links h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
+
+.quick-links a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+nav .fa {
+    display: none;
+}
+
+
+/*------------------------------------Contact Us---------------------*/
+
+.contact-us {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    height: 100vh;
+    padding-top: 3cm;
+    margin-right: 10px;
+}
+
+.location_contact_Us {
+    margin-bottom: 30px;
+}
+
+.location_contact_Us div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.location_contact_Us h1 {
+    padding: 5px;
+}
+
+.location_contact_Us div .fa {
+    font-size: 28px;
+    color: orange;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.location_contact_Us div p {
+    padding: 0;
+    font-size: 20px;
+}
+
+.location_contact_Us div h5 {
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+
+.location_contact_Us input,
+.location_contact_Us textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+
+/*--------------------------------about us content--------------------------*/
+
+.about-Us {
+    padding-top: 3cm;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-message {
+    flex-basis: 25%;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
+
+.about-us-explanation {
+    flex-basis: 20%;
+    padding: 15px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
+
+.about-us-explanation li {
+    list-style: none;
+}
+
+.about-us-explanation a {
+    text-decoration: none;
+    background: rgb(0, 17, 128);
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 30px;
+    box-shadow: 6px 6px 2px 4px #777;
+    cursor: pointer;
+}
+
+.about-us-explanation a:hover {
+    background: #ef6;
+}
+
+.about-us-images {
+    flex-basis: 30%;
+    padding: 15px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
+
+.about-us-images img {
+    width: 100%;
+}
+
+
+/*--------------------------------PACKEGES------------------------------*/
+
+.packages {
+    padding-top: 3cm;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parkage-offer {
+    flex-basis: 20%;
+    padding: 15px;
+}
+
+.parkage-offer img {
+    width: 100%;
+    padding: 5px;
+}
+
+.parkage-offer li {
+    list-style: none;
+}
+
+.target-audience {
+    flex-basis: 20%;
+    padding: 15px;
+}
+
+.target-audience li {
+    list-style: none;
+}
+
+.target-audience img {
+    width: 100%;
+    padding: 5px;
+}
+
+.salt-lick {
+    flex-basis: 20%;
+    padding: 15px;
+}
+
+.salt-lick img {
+    width: 100%;
+    padding: 5px;
+}
+
+.cost-longe {
+    flex-basis: 20%;
+    padding: 15px;
+}
+
+.cost-per-season h3 {
+    background: purple;
+    color: orange;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cost-per-season div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: orange;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+/*---------------------------------safaricontent-------------------------*/
+
+.safaris-content {
+    padding-top: 3cm;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.masaimara {
+    flex-basis: 30%;
+    padding: 15px;
+    box-shadow: 6px 6px 2px 4px #777;
+}
+
+.masaimara img {
+    width: 100%;
+    padding: 5px;
+}
+
+.serengeti {
+    flex-basis: 30%;
+    padding: 15px;
+    box-shadow: 6px 6px 2px 4px #777;
+}
+
+.serengeti img {
+    width: 100%;
+    padding: 5px;
+}
+
+.ngorogoro {
+    flex-basis: 30%;
+    padding: 15px;
+    box-shadow: 6px 6px 2px 4px #777;
+}
+
+.ngorogoro img {
+    width: 100%;
+    padding: 15px;
+}
+
+
+/*--------------------------------Media Queriy----------------------------*/
+
+@media(max-width: 700px) {
+    .nav_links ul li {
+        display: block;
+    }
+    .nav_links {
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        background: rgb(0, 17, 128);
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: orange;
+        margin: 40px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav_links ul {
+        padding: 30px;
+    }
+    /*----------------------------SWIPER----------------------------*/
+    .swiper {
+        width: 100%;
+        height: 50vh;
+    }
+    .container {
+        width: 100%;
+        height: 60vh;
+    }
+    .swiper-slide img {
+        position: relative;
+    }
+    .header {
+        min-height: 60vh;
+    }
+    /*-------------------------------welcoming-section------------------------*/
+    .left-welcome-content {
+        flex-basis: 100%;
+        padding: 7px;
+    }
+    .left-welcome-content h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .right-welcomeImage {
+        flex-basis: 100%;
+        padding-top: 20px;
+    }
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quick-links {
+        margin-top: 20px;
+    }
+    .quick-links h1 {
+        margin-left: 30px;
+    }
+    .quick-links a {
+        margin-left: 30px;
+    }
+    /*---------------contact us fomr content--------------*/
+    .contact-us {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+    .location_contact_Us {
+        margin-left: 30px;
+    }
+    .location_contact_Us input,
+    .location_contact_Us textarea {
+        width: 90%;
+    }
+    /*-----------------------about us-------------*/
+    .about-us-message {
+        flex-basis: 100%;
+        box-shadow: none;
+    }
+    .about-us-explanation {
+        flex-basis: 100%;
+        box-shadow: none;
+    }
+    .about-us-images {
+        flex-basis: 100%;
+        margin-top: 30px;
+        box-shadow: none;
+    }
+    /*----------------------------parkeges---------------------*/
+    .parkage-offer {
+        flex-basis: 100%;
+        margin-right: 10px;
+    }
+    .parkage-offer h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .target-audience {
+        flex-basis: 100%;
+        margin-right: 10px;
+    }
+    .salt-lick {
+        flex-basis: 100%;
+        margin-right: 10px;
+    }
+    .cost-longe {
+        flex-basis: 100%;
+        margin-right: 10px;
+    }
+    .salt-lick h2 {
+        font-size: 20px;
+    }
+    /*---------------------------------safaricontent-------------------------*/
+    .masaimara {
+        flex-basis: 100%;
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+    .serengeti {
+        flex-basis: 100%;
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+    .ngorogoro {
+        flex-basis: 100%;
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+}
+@media(prefers-color-scheme: dark){
+    body{
+        background: #000;
+        color: #fff;
+    }
+}
